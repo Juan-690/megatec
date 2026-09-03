@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megatec - Tienda de tecnología</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body class="home-body">
+
+    <header class="site-header">
+        <div class="top-header">
+
+            <a href="inicio.html" class="brand">
+                <strong>Megatec<span>●</span></strong>
+                <small>compra</small>
+            </a>
+
+            <div class="search-box">
+                <input type="search" id="searchInput" placeholder="Buscar productos">
+                <button id="searchButton" type="button" aria-label="Buscar">🔍</button>
+            </div>
+
+            <div class="header-actions">
+                <button class="user-button" id="accountButton" title="Mi cuenta">👤</button>
+
+                <button class="cart-button" id="cartButton" title="Carrito">
+                    🛒
+                    <span id="cartCount">0</span>
+                </button>
+
+                <a href="login.php" class="logout-button">Cerrar sesión</a>
+            </div>
+
+        </div>
+
+        <nav class="main-menu">
+            <a href="#celulares">Inicio</a>
+            <a href="#televisores">Servicios</a>
+            <a href="#tecnologia">Promociones</a>
+            <a href="#electro">Nosotros</a>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="categories">
+            <div class="category-grid">
+
+                <article class="category-card" id="celulares">
+                    <div class="product-image phone">
+                        <div class="phone-back"><i></i><i></i><i></i></div>
+                        <div class="phone-front"><span>Megatec</span></div>
+                    </div>
+                    <button class="category-button">
+                        <span>CELULARES</span><b>→</b>
+                    </button>
+                </article>
+
+                <article class="category-card" id="televisores">
+                    <div class="product-image television">
+                        <div class="tv-screen"><span>MEGATEC</span></div>
+                        <div class="tv-stand"></div>
+                    </div>
+                    <button class="category-button">
+                        <span>TELEVISORES</span><b>→</b>
+                    </button>
+                </article>
+
+                <article class="category-card">
+                    <div class="product-image smartwatch">
+                        <div class="watch-band"></div>
+                        <div class="watch"><b>10</b><small>18</small></div>
+                    </div>
+                    <button class="category-button">
+                        <span>SMARTWATCH</span><b>→</b>
+                    </button>
+                </article>
+
+                <article class="category-card">
+                    <div class="product-image tablet">
+                        <div class="tablet-body"><span>Megatec</span></div>
+                        <div class="tablet-pen"></div>
+                    </div>
+                    <button class="category-button">
+                        <span>TABLETS</span><b>→</b>
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="offers" id="tecnologia">
+            <h2>OFERTAS DESTACADAS</h2>
+            <p class="offers-subtitle">Encuentra los productos favoritos de nuestros clientes</p>
+
+            <div class="offer-grid">
+                <article class="offer-card">
+                    <div class="offer-image">📱</div>
+                    <span class="offer-tag">OFERTA</span>
+                    <h3>Smartphone Megatec Pro</h3>
+                    <p>128 GB · Cámara de alta resolución</p>
+                    <strong>$399.990</strong>
+                    <button class="buy-button" data-product="Smartphone Megatec Pro">Agregar al carrito</button>
+                </article>
+
+                <article class="offer-card">
+                    <div class="offer-image">📺</div>
+                    <span class="offer-tag">DESTACADO</span>
+                    <h3>Smart TV 55" Megatec</h3>
+                    <p>4K Ultra HD · Smart TV</p>
+                    <strong>$549.990</strong>
+                    <button class="buy-button" data-product="Smart TV 55 Megatec">Agregar al carrito</button>
+                </article>
+
+                <article class="offer-card">
+                    <div class="offer-image">⌚</div>
+                    <span class="offer-tag">NUEVO</span>
+                    <h3>Megatec Watch Fit</h3>
+                    <p>Pantalla inteligente · Bluetooth</p>
+                    <strong>$89.990</strong>
+                    <button class="buy-button" data-product="Megatec Watch Fit">Agregar al carrito</button>
+                </article>
+
+                <article class="offer-card">
+                    <div class="offer-image">📱</div>
+                    <span class="offer-tag">OFERTA</span>
+                    <h3>Tablet Megatec 10"</h3>
+                    <p>64 GB · Wi-Fi · Pantalla HD</p>
+                    <strong>$179.990</strong>
+                    <button class="buy-button" data-product="Tablet Megatec 10">Agregar al carrito</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="home-footer">
+        <div>
+            <strong>Megatec</strong>
+            <p>Tu tienda de tecnología y hogar.</p>
+        </div>
+        <div>
+            <strong>Ayuda</strong>
+            <p>Contacto · Preguntas frecuentes</p>
+        </div>
+        <div>
+            <strong>Información</strong>
+            <p>Privacidad · Términos y condiciones</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="scriptweb.js"></script>
+</body>
+</html>
